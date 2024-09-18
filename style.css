@@ -1,0 +1,247 @@
+/*basic body ka reset*/
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    animation: gradientBackground 10s ease infinite;
+    background: linear-gradient(-45deg, #ff6b6b, #f94c66, #5f27cd, #10ac84);
+    background-size: 400% 400%;
+}
+
+/* Animating background gradients */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header */
+header {
+    background-color: 384B70;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+/* Fixed header styling */
+header {
+    background-color: #384B70; /* Use the correct hex color code */
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* overlap nhi hona */
+body {
+    padding-top: 70px; 
+}
+
+
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-title h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.nav-left, .nav-right {
+    display: flex;
+}
+
+.nav-left ul, .nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-left li, .nav-right li {
+    margin: 0 15px;
+}
+
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-right li:last-child a {
+    margin-right: 20px; 
+}
+
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main-section {
+    color: white;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+.scanner-section {
+    background-color: #507687;
+    padding: 150px;
+    flex-grow: 1;
+}
+
+.scanner-container {
+    background-color: #FDFAD9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.scanner-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.scanner-container input[type="file"] {
+    width: 100%; 
+    max-width: 300px; 
+    margin-bottom: 20px;
+}
+
+.scanner-container button {
+    margin-top: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #10ac84;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0c795b;
+}
+
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0 ;
+}
+
+
+.rapid-treatment-section {
+    background-color: #AD88C6; 
+    padding: 50px;
+    text-align: center;
+}
+
+.rapid-treatment-container {
+    background-color:#FFE6E6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 80%;
+    max-width: 800px;
+}
+
+.rapid-treatment-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.rapid-treatment-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.rapid-treatment-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rapid-treatment-container li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
