@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Medical Service - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header ka section -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                   <li><a href="index.html">Home</a></li> 
+                    <li><a href="nearest-hospitals.html">Nearest Hospitals</a></li>
+                </ul>
+            </div>
+            <div class="header-title">
+                <h1><u>SCULPTCARE</u></h1>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="rapid.html">Rapid Treatment</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- AI Tablet Scanner ka Section -->
+    <section id="home" class="scanner-section">
+        <div class="scanner-container">
+            <h2>Scan Your Medicine Tablet</h2>
+            <p>Upload an image of the tablet, and our AI will suggest its purpose.</p>
+
+            <!-- tablet scan karne input lera -->
+            <input type="file" id="tabletInput" accept="image/*" onchange="processTabletImage()" />
+            <button onclick="simulateTabletScan()">Simulate AI Scan</button>
+
+            <!-- result display karta idhar-->
+            <div class="scan-result" id="scanResult">
+                <h3>Scan Result:</h3>
+                <p id="resultMessage">No scan yet. Please upload a tablet image.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SCULPTCARE. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
